@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+}
+
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #000435;
+    align-items: center;
+    padding-top: 3.5%;
+    padding-bottom: 3.5%;
+
+}
+
+.header h2 {
+    color: #D5AD36;
+    text-align: center;
+    padding-left: 10%;
+}
+
+.hero {
+    position: relative;
+    height: 50vh;
+    background-image: url('../../img/hero.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+
+  .hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .hero-overlay h1 {
+    color: #D5AD36;
+    font-size: 3rem;
+    line-height: 1.2;
+  }
+  
+  .hero-overlay h1 span {
+    display: block; /* this forces each word onto a new line */
+  }
