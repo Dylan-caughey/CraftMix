@@ -3,6 +3,8 @@ window.addEventListener("DOMContentLoaded", () => {
     loadComponent("components/header.html", "#header");
     loadComponent("components/footer.html", "#footer");
     loadComponent("components/hero.html", "#hero")
+    loadComponent("components/reviews.html", "#reviews")
+    loadComponent("components/quote.html", "#quote")
   });
   
   function loadComponent(path, selector) {
