@@ -22,7 +22,7 @@
 .hero {
     position: relative;
     height: 50vh;
-    background-image: url('../../img/hero.jpg');
+    background-image: url('../../img/hero.avif');
     background-size: cover;
     background-position: center;
   }
@@ -38,13 +38,55 @@
     align-items: center;
     text-align: center;
   }
+
+  .hero-blur {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    backdrop-filter: blur(1.5px);
+    background-color: rgba(0, 0, 0, 0.1); /* optional tint */
+    z-index: 1;
+  }
   
   .hero-overlay h1 {
     color: #D5AD36;
     font-size: 3rem;
     line-height: 1.2;
+    z-index: 2;
+    position: relative;
   }
   
   .hero-overlay h1 span {
     display: block; /* this forces each word onto a new line */
   }
+
+.socials {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 5.5rem; /* adjust as needed */
+  gap: 1.8rem; /* controls spacing between icons */
+}
+
+.revquote {
+  margin: 1%;
+  display: flex;         /* Enables Flexbox */
+  gap: 2rem;             /* Optional: spacing between the two boxes */
+  justify-content: center;  /* Optional: center them horizontally */
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.reviews {
+  background-color: red;
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+.quote {
+  background-color: blue;
+  height: 20%;
+  width: 30%;
+}
