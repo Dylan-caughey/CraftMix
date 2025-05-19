@@ -8,15 +8,7 @@
     justify-content: space-between;
     background-color: #000435;
     align-items: center;
-    padding-top: 3.5%;
-    padding-bottom: 3.5%;
-
-}
-
-.header h2 {
-    color: #D5AD36;
-    text-align: center;
-    padding-left: 10%;
+    max-height: 400px;
 }
 
 .hero {
@@ -62,31 +54,70 @@
     display: block; /* this forces each word onto a new line */
   }
 
-.socials {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  padding-right: 5.5rem; /* adjust as needed */
-  gap: 1.8rem; /* controls spacing between icons */
+  .socials {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 0.2rem;
+  }
+.socials img{
+  padding-right: 2rem;
+  padding-left: 2rem;
+  max-height: 50px;     /* Limits height but allows smaller screens to scale */
+  height: auto;         /* Keeps image natural if max-height isn't hit */
+  width: auto;          /* Maintains aspect ratio */
+  object-fit: contain;  /* Ensures it doesn't stretch */
 }
 
 .revquote {
-  margin: 1%;
   display: flex;         /* Enables Flexbox */
   gap: 2rem;             /* Optional: spacing between the two boxes */
   justify-content: center;  /* Optional: center them horizontally */
   align-items: flex-start;
   justify-content: space-between;
+  background-color: #000435;
 }
 
-.reviews {
-  background-color: red;
-  height: 1.5rem;
-  width: 1.5rem;
+.logo img {
+  height: 150px;          /* Fixed height */
+  width: auto;           /* Let the width scale based on image's aspect ratio */
+  max-width: 100%;       /* Prevent it from overflowing its container */
+  object-fit: contain;
+  padding-left: 3rem;
+}
+
+#reviews {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  border: 3px solid #D5AD36;
+}
+
+#reviews img {
+  width: 100%;
+  height: auto;
+  max-height: 250px;
+  display: block;
+  object-fit: cover;
 }
 
 .quote {
-  background-color: blue;
-  height: 20%;
-  width: 30%;
+  width: 60%;
+}
+
+.footer {
+  background-color: #000435;
+  height: 300px
+}
+
+/* ✅ On smaller screens: stack quote on top, reviews underneath */
+@media (max-width: 768px) {
+  .revquote {
+    flex-direction: column;
+  }
+
+  .quote,
+  .reviews {
+    width: 100%;
+  }
 }
