@@ -71,7 +71,6 @@
 
 .revquote {
   display: flex;         /* Enables Flexbox */
-  gap: 2rem;             /* Optional: spacing between the two boxes */
   justify-content: center;  /* Optional: center them horizontally */
   align-items: flex-start;
   justify-content: space-between;
@@ -101,8 +100,98 @@
   object-fit: cover;
 }
 
+#quote {
+  width: 55%;
+  border: 3px solid #D5AD36;
+}
+
+#quote h2 {
+  color: #D5AD36;
+}
+
 .quote {
-  width: 60%;
+  width: 70%;
+  padding: 2rem;
+  margin: auto;
+}
+
+.quote h1 {
+  color: #D5AD36;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.quote-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centers the button horizontally */
+}
+
+.quote-form .form-grid {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  gap: 1rem 2rem;
+}
+
+.form-grid .wider {
+  grid-column: span 2;
+}
+
+.quote-form label {
+  display: block;
+  margin-bottom: 0.25rem;
+  color: #D5AD36;
+}
+
+.quote-form input,
+.quote-form textarea {
+  width: 100%;
+  max-width: 100%;
+  padding: 0.5rem;
+  box-sizing: border-box;
+  background-color: rgb(84, 84, 84);
+  box-shadow: none;
+  outline: none;
+  appearance: none;
+  border: 1px solid #000435
+}
+
+.quote-form input,
+.quote-form textarea,
+.quote-form select {
+  border-radius: 8px; /* Adjust the value for more/less rounding */
+  padding: 0.5rem;
+  box-sizing: border-box;
+}
+
+.quote-form input:focus,
+.quote-form textarea:focus {
+  outline: none;
+  box-shadow: none;
+  border-color: #000435;
+}
+
+.quote-form button {
+  margin-top: 1.5rem;
+  padding: 0.75rem 1.5rem;
+  background-color: #D5AD36;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+  display: block;
+}
+
+input,
+textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+input:-webkit-autofill,
+textarea:-webkit-autofill {
+  box-shadow: 0 0 0px 1000px rgb(84, 84, 84) inset !important;
 }
 
 .footer {
