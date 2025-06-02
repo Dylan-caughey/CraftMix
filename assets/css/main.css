@@ -69,12 +69,25 @@
   object-fit: contain;  /* Ensures it doesn't stretch */
 }
 
-.revquote {
-  display: flex;         /* Enables Flexbox */
-  justify-content: center;  /* Optional: center them horizontally */
-  align-items: flex-start;
-  justify-content: space-between;
+.main-content {
+  display: flex;               /* Enables Flexbox */
+  flex-wrap: wrap;
+  flex-direction: row;         /* Two columns (default, but shown for clarity) */
+  justify-content: space-between; /* Space between the columns */
+  align-items: flex-start;     /* Align items to top */
   background-color: #000435;
+}
+
+.rev-about {
+  width: 45%;
+  box-sizing: border-box;
+}
+
+.quote-gallery {
+  width: 55%;
+  display: flex;
+  justify-content: center; /* center horizontally */
+  align-items: center;     /* center vertically (optional) */
 }
 
 .logo img {
@@ -86,7 +99,6 @@
 }
 
 #reviews {
-  width: 45%;
   display: flex;
   flex-direction: column;
   border: 3px solid #D5AD36;
@@ -101,12 +113,19 @@
 }
 
 #quote {
-  width: 55%;
   border: 3px solid #D5AD36;
+  width: 100%;
 }
 
 #quote h2 {
   color: #D5AD36;
+}
+
+#about {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  overflow: hidden;
+  border: 3px solid #D5AD36;
 }
 
 .quote {
@@ -180,6 +199,29 @@
   cursor: pointer;
   border-radius: 8px;
   display: block;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding-top: 0.1rem;
+  justify-content: center; /* center horizontally */
+  align-items: center;     /* center vertically (optional) */
+}
+
+.about h1 {
+  padding-bottom: 0.5rem;
+  font-size: 36px;
+  color: #D5AD36;
+}
+
+.about p {
+  width: 85%;
+  padding-bottom: 0.5rem;
+  text-align: center;
+  font-size: larger;
+  color: #D5AD36;
 }
 
 input,
