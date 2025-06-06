@@ -8,6 +8,7 @@ window.addEventListener("DOMContentLoaded", () => {
     loadComponent("components/about.html", "#about")
     loadComponent("components/gallery.html", "#gallery")
     loadComponent("components/packages.html", "#packages")
+    loadComponent("components/menu.html", "#menu")
   });
   
   function loadComponent(path, selector) {
