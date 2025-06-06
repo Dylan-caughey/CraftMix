@@ -130,6 +130,10 @@
   border: 3px solid #D5AD36;
 }
 
+#packages {
+  border: 3px solid #D5AD36
+}
+
 .quote {
   width: 70%;
   padding: 2rem;
@@ -269,6 +273,29 @@
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
+}
+
+.packages {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-top: 0.1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.packages h1 {
+  padding-bottom: 0.5rem;
+  font-size: 36px;
+  color: #D5AD36;
+}
+
+.packages p {
+  width: 85%;
+  padding-bottom: 0.5rem;
+  text-align: center;
+  font-size: larger;
+  color: #D5AD36;
 }
 
 input,
