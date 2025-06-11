@@ -6,7 +6,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    background-color: #000435;
+    background-color: #000000;
     align-items: center;
     max-height: 400px;
 }
@@ -43,9 +43,9 @@
   }
   
   .hero-overlay h1 {
-    color: #D5AD36;
+    color: #e1e1e1;
+    font-family: "Times New Roman", Times, serif;
     font-size: 3rem;
-    line-height: 1.2;
     z-index: 2;
     position: relative;
   }
@@ -75,7 +75,7 @@
   flex-direction: row;         /* Two columns (default, but shown for clarity) */
   justify-content: space-between; /* Space between the columns */
   align-items: flex-start;     /* Align items to top */
-  background-color: #000435;
+  background-color: #000000;
 }
 
 .rev-about {
@@ -99,7 +99,6 @@
 #reviews {
   display: flex;
   flex-direction: column;
-  border: 3px solid #D5AD36;
 }
 
 #reviews img {
@@ -111,7 +110,6 @@
 }
 
 #quote {
-  border: 3px solid #D5AD36;
   width: 100%;
 }
 
@@ -123,19 +121,6 @@
   word-wrap: break-word;
   overflow-wrap: break-word;
   overflow: hidden;
-  border: 3px solid #D5AD36;
-}
-
-#gallery {
-  border: 3px solid #D5AD36;
-}
-
-#packages {
-  border: 3px solid #D5AD36
-}
-
-#menu {
-  border: 3px solid #D5AD36
 }
 
 .quote {
@@ -147,7 +132,10 @@
 .quote h1 {
   color: #D5AD36;
   text-align: center;
-  margin-bottom: 1.5rem;
+  margin-bottom: 2rem;
+  color: #e1e1e1;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.6;
 }
 
 .quote-form {
@@ -169,7 +157,9 @@
 .quote-form label {
   display: block;
   margin-bottom: 0.25rem;
-  color: #D5AD36;
+  color: #e1e1e1;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.6;
 }
 
 .quote-form input,
@@ -182,7 +172,10 @@
   box-shadow: none;
   outline: none;
   appearance: none;
-  border: 1px solid #000435
+  border: 1px solid #000000;
+  color: #e1e1e1;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.6;
 }
 
 .quote-form input,
@@ -197,14 +190,14 @@
 .quote-form textarea:focus {
   outline: none;
   box-shadow: none;
-  border-color: #000435;
+  border-color: #000000;
 }
 
 .quote-form button {
   margin-top: 1.5rem;
   padding: 0.75rem 1.5rem;
-  background-color: #D5AD36;
-  color: white;
+  background-color: #e1e1e1;
+  color: black;
   border: none;
   cursor: pointer;
   border-radius: 8px;
@@ -218,12 +211,15 @@
   padding-top: 0.1rem;
   justify-content: center; /* center horizontally */
   align-items: center;     /* center vertically (optional) */
+  border-bottom: 1px solid #e1e1e1;
 }
 
 .about h1 {
   padding-bottom: 0.5rem;
   font-size: 36px;
-  color: #D5AD36;
+  color: #e1e1e1;
+  line-height: 2;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
 
 .about p {
@@ -231,7 +227,9 @@
   padding-bottom: 0.5rem;
   text-align: center;
   font-size: larger;
-  color: #D5AD36;
+  color: #e1e1e1;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.6;
 }
 
 .gallery {
@@ -291,7 +289,9 @@
 .packages h1 {
   padding-bottom: 0.5rem;
   font-size: 36px;
-  color: #D5AD36;
+  color: #e1e1e1;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  line-height: 2;
 }
 
 .packages p {
@@ -299,7 +299,9 @@
   padding-bottom: 0.5rem;
   text-align: center;
   font-size: larger;
-  color: #D5AD36;
+  color: #e1e1e1;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.6;
 }
 
 .menu {
@@ -311,18 +313,11 @@
   align-items: center;
 }
 
-.menu h1 {
-  padding-bottom: 0.5rem;
-  font-size: 36px;
-  color: #D5AD36;
-}
-
-.menu p {
-  width: 85%;
-  padding-bottom: 0.5rem;
-  text-align: center;
-  font-size: larger;
-  color: #D5AD36;
+.menu img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
 }
 
 input,
@@ -338,7 +333,7 @@ textarea:-webkit-autofill {
 }
 
 .footer {
-  background-color: #000435;
+  background-color: #000000;
   height: 300px
 }
 
