@@ -359,10 +359,13 @@ textarea:-webkit-autofill {
     width: 100%;
   }
 
-  .socials img,
-  .logo img {
+  .socials img{
     max-width: 80px;
     padding: 0 1rem;
+  }
+
+  .logo img{
+    max-width: 90px;
   }
 
   .quote-form .form-grid {
@@ -415,5 +418,17 @@ textarea:-webkit-autofill {
   .quote {
     width: 90%;
     padding: 1rem;
+  }
+}
+
+@media (max-width: 394px) {
+
+  .logo {
+    align-self: center;
+  }
+
+  .socials img{
+    max-width: 25px;
+
   }
 }
