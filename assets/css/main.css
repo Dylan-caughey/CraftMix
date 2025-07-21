@@ -20,7 +20,7 @@ body {
 .hero {
     position: relative;
     height: 50vh;
-    background-image: url('../../img/hero.avif');
+    background-image: url('../../img/Hero_2.png');
     background-size: cover;
     background-position: center;
   }
@@ -49,7 +49,7 @@ body {
   }
   
   .hero-overlay h1 {
-    color: #e1e1e1;
+    color: #f2c7c7;
     font-family: "Times New Roman", Times, serif;
     font-size: 3rem;
     z-index: 2;
